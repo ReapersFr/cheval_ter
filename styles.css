@@ -1,74 +1,101 @@
+/* styles.css */
+
+/* Styles généraux */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav {
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    color: #777;
-  }
-  
-  section {
-    margin: 20px;
-  }
-  
-  h1, h2 {
-    color: #fff; /* Nouvelle couleur pour les titres */
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /* Ajout de couleurs */
-  h2 {
-    color: #0099cc;
-  }
-  
-  p {
-    color: #555;
-  }
-  
-  ul {
-    color: #777;
-  }
-  
-  a {
-    color: #0066cc;
-  }
-  
-  a:hover {
-    color: #003366;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0099cc;
+  padding: 20px;
+  color: #fff;
+}
+
+nav {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+nav ul li.active a {
+  color: #0099cc;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  color: #555;
+  text-align: center;
+}
+
+/* Styles spécifiques à la page des races de chevaux */
+
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.image-container img.horse-image {
+  width: 300px; /* Taille commune pour les images de chevaux */
+  float: left;
+}
+
+.image-container img.horse-image.special {
+  width: 400px; /* Taille différente pour le cheval poisson */
+}
+
+h2 {
+  color: #0099cc;
+  margin-top: 30px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 15px;
+  overflow: auto;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #003366;
+}
+
+.justified {
+  text-align: justify;
+}
